@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <div className="flex items-center justify-center min-h-screen bg-pink-200">
-          <div className="bg-white w-[350px] h-[640px] shadow-lg rounded overflow-hidden">{children}</div>
+          <div className="bg-purple-300 w-[350px] h-[640px] shadow-lg rounded overflow-hidden relative">{children}</div>
         </div>
       </body>
     </html>

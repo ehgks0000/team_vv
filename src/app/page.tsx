@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <span className="b">asd</span>
+      <span className="bg-amber-400 text-100xl bf">asasdaslkdd</span>
     </>
   )
 }
