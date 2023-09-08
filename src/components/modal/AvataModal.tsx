@@ -24,6 +24,9 @@ const AvataModal = () => {
     }
   }
 
+  const getTabClassName = (tabName: string) =>
+    `py-2 cursor-pointer ${selectedTab === tabName ? 'border-b-2 border-black' : ''}`
+
   return (
     <div
       ref={modalRef}
@@ -31,13 +34,13 @@ const AvataModal = () => {
       style={{ height: isOpen ? '250px' : '50px' }}>
       <div className="bg-white rounded-t-lg relative flex flex-col justify-between text-black">
         <div className="flex justify-around border-b-2">
-          <div onClick={() => handleTabClick('tab1')} className="py-2 cursor-pointer">
+          <div onClick={() => handleTabClick('tab1')} className={getTabClassName('tab1')}>
             탭 1
           </div>
-          <div onClick={() => handleTabClick('tab2')} className="py-2 cursor-pointer">
+          <div onClick={() => handleTabClick('tab2')} className={getTabClassName('tab2')}>
             탭 2
           </div>
-          <div onClick={() => handleTabClick('tab3')} className="py-2 cursor-pointer">
+          <div onClick={() => handleTabClick('tab3')} className={getTabClassName('tab3')}>
             탭 3
           </div>
         </div>
