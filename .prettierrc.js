@@ -6,7 +6,4 @@ module.exports = {
   trailingComma: 'all',
   jsxBracketSameLine: true,
   bracketSpacing: true,
-  // importOrder: ['^react$', '<THIRD_PARTY_MODULES>', '^@search/common/(.*)$', '^@/(.*)$', '^../(.*)$', '^./(.*)$'],
-  // importOrderSeparation: true,
-  // importOrderSortSpecifiers: true,
 }
