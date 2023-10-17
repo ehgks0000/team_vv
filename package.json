@@ -9,6 +9,7 @@
     "turbo": "1.9.9"
   },
   "scripts": {
+    "build": "turbo build",
     "start:dev": "turbo run dev --parallel",
     "front": "turbo run dev --filter=front"
   },
